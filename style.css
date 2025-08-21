@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 25vh;
+  font-family: "Manrope", sans-serif;
+}
+.adviceContainer {
+  height: auto;
+  width: 90vw;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  border-radius: 15px;
+  padding: 7%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.patternDivider {
+  height: 20px;
+  width: 100%;
+  background-image: url("images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10%;
+}
+.nextAdvice {
+  position: absolute;
+  bottom: -14%;
+  background-color: hsl(150, 100%, 66%);
+  padding: 4%;
+  border-radius: 50%;
+  align-self: center;
+}
+.adviceNo {
+  color: hsl(150, 100%, 66%);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+.advice {
+  color: hsl(193, 38%, 86%);
+  font-weight: 900;
+  font-size: 22px;
+}
+.adviceContent {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  margin-bottom: 5%;
+  /* animation */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.pop-in {
+  transform: scale(1.05); 
+  opacity: 1;
+}
+
+.adviceContent > * {
+  margin-bottom: 2vh;
+}
+.nextAdvice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+.skeleton {
+  width: 80%;
+  height: 40px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+  margin-bottom: 1vh;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 600px) {
+  .adviceContainer {
+    width: 50vw;
+    padding: 5%;
+  }
+  .patternDivider {
+    margin-bottom: 4%;
+  }
+  .nextAdvice {
+    padding: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  .adviceContainer {
+    width: 35vw;
+    padding: 3%;
+  }
+  .patternDivider {
+    background-image: url("images/pattern-divider-desktop.svg");
+    margin-bottom: 6%;
+  }
+}
+@media (min-width: 2560px) {
+  .adviceNo {
+    font-size: 25px;
+  }
+  .advice {
+    font-size: 40px;
+  }
+  .nextAdvice {
+    bottom: -12%;
+    padding: 4%;
+  }
+}
