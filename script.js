@@ -1,11 +1,10 @@
+const adviceNo = document.querySelector(".adviceNo");
+const advice = document.querySelector(".advice");
+const adviceContent = document.querySelector(".adviceContent");
+
+const skeletons = document.querySelectorAll(".skeleton");
 async function getAdvice() {
   try {
-    const adviceNo = document.querySelector(".adviceNo");
-    const advice = document.querySelector(".advice");
-    const adviceContent = document.querySelector(".adviceContent");
-
-    const skeletons = document.querySelectorAll(".skeleton");
-
     // show skeleton while fetching
     skeletons.forEach((s) => (s.style.display = "block"));
     advice.style.display = "none";
@@ -29,7 +28,7 @@ async function getAdvice() {
     );
   }
 }
-getAdvice();
+
 
 function nextAdvice() {
   const nextAdvice = document.querySelector(".nextAdvice");
