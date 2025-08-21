@@ -12,7 +12,7 @@ async function getAdvice() {
 
     adviceContent.classList.remove("pop-in");
 
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch("https://api.adviceslip.com/advice?timestamp=${Date.now()}");
     const data = await response.json();
     skeletons.forEach((s) => (s.style.display = "none"));
 
