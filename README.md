@@ -1,23 +1,7 @@
 Frontend Mentor - Advice Generator App Solution
 
 This is a solution to the Advice Generator App challenge on Frontend Mentor
-. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Table of contents
-
-Screenshot
-
-Links
-
-Built with
-
-What I learned
-
-Continued development
-
-Useful resources
-
-Author
 
 Users should be able to:
 
