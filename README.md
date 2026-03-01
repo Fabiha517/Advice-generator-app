@@ -47,13 +47,6 @@ to fetch dynamic advice
 
 📏 Maintaining a stable container height with min-height to avoid layout jumps
 
-Continued development
-
-🎨 Experiment with different animation styles (fade, slide, pop)
-
-🗄️ Implement caching to avoid repeated API calls
-
-📱 Refine responsive typography and layout for larger screens
 
 Useful resources
 
@@ -61,16 +54,8 @@ Useful resources
 
 - Official API documentation for fetching advice
 
-🏗️ Frontend Mentor
-
-- Challenge inspiration and design guidance
 
 🎬 CSS Animations
 
 - For smooth pop-in/fade effects
 
-Author
-
-👤 Name: [Your Name]
-
-🖥️ Frontend Mentor - @Fabiha517
